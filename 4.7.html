@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<h2>Check Positive Or Negative</h2>
+<br><br>
+<label>Enter 1st Number:
+<input type="text" id="num1"></label>
+<label>Enter 2nd Number:
+<input type="text" id="num2"></label>
+<label>Enter 3rd Number:
+<input type="text" id="num3"></label>
+<button onclick="largest()">Check</button>
+<p id="a"></p>
+<script>
+function largest()
+{
+var x=document.getElementById("num1").value;
+var y=document.getElementById("num2").value;
+var z=document.getElementById("num3").value;
+var p=parseFloat(x)
+var q=parseFloat(y)
+var r=parseFloat(z)
+if(p>q && p>r)
+{
+document.getElementById("a").innerHTML=p+" is largest"
+}
+else if(q>p && q>r)
+{
+document.getElementById("a").innerHTML=q+" is largest"
+}
+else
+{
+document.getElementById("a").innerHTML=r+" is largest"
+}
+}
+</script>
+</center>
+</body>
+</html>

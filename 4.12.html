@@ -1,0 +1,32 @@
+<html>
+<body>
+<center>
+<label>
+<br>
+<br>
+Enter your age
+<input type="date" id="dob"></label>
+<button onclick="agecal()">Calculate Age</button>
+<h2 id="age"></h2>
+<script>
+function agecal()
+{
+var x=document.getElementById("dob").value;
+var dob=new Date(x);
+if(x==null || x=="")
+{
+return false
+}
+else
+{
+var month_diff=Date.now()-dob.getTime();
+var age_dt=new Date(month_diff);
+var year=age_dt.getUTCFullYear();
+var age=Math.abs(year-1970);
+return document.getElementById("age").innerHTML="Age is: "+age+" Years";
+}
+}
+</script>
+</center>
+</body>
+</html>

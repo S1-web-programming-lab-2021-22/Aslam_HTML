@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<h2>Multiple Of 3 or 7</h2>
+<br><br>
+<label>Enter 1st Number:
+<input type="text" id="num1"></label>
+<label>Enter 2nd Number:
+<input type="text" id="num2"></label>
+<button onclick="multiple()">Multiple</button>
+<button onclick="add()">Add</button>
+<p id="a"></p>
+<script>
+function multiple()
+{
+var x=document.getElementById("num1").value;
+var y=document.getElementById("num2").value;
+var a=parseFloat(x);
+var b=parseFloat(y);
+var m=a*b;
+document.getElementById("a").innerHTML="Product is "m
+}
+function add()
+{
+var x=document.getElementById("num1").value;
+var y=document.getElementById("num2").value;
+var a=parseFloat(x);
+var b=parseFloat(y);
+var m=a+b;
+document.getElementById("a").innerHTML="Sum is "n
+}
+</script>
+</center>
+</body>
+</html>

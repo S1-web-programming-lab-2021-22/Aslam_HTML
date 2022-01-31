@@ -1,0 +1,29 @@
+<html><head><title></title></head>
+<body>
+<center>
+<h2>Adding "Py" in front of a string</h2>
+<br>
+<br>
+<label>Enter ANY string:
+<input type="text" id="s"></label>
+<button onclick="py()">Check</button>
+<p id="z"></p>
+
+<script>
+function py()
+{
+var x=document.getElementById("s").value;
+if (x.substring(0,2) === "Py" || x.substring(0,2) === "py" || x.substring === null)
+{
+document.getElementById("z").innerHTML=x;
+}
+else
+{
+document.getElementById("z").innerHTML="Py"+x;
+}
+}
+</script>
+
+</center>
+</body>
+</html>

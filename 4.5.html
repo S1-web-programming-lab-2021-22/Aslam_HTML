@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<h2>Check Positive Or Negative</h2>
+<br><br>
+<label>Enter Any Number:
+<input type="text" id="num"></label>
+<button onclick="ispositive()">Check</button>
+<p id="a"></p>
+<script>
+function ispositive()
+{
+var x=document.getElementById("num").value;
+if(x>0)
+{
+document.getElementById("a").innerHTML=x+" is a positive number"
+}
+else if(x<0)
+{
+document.getElementById("a").innerHTML=x+" is a negative number"
+}
+else
+{
+alert("0 Adikkalle")
+}
+}
+</script>
+</center>
+</body>
+</html>
